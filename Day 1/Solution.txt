@@ -1,0 +1,18 @@
+class Solution(object):
+    def titleToNumber(self, columnTitle):
+        """
+        :type columnTitle: str
+        :rtype: int
+        """
+        
+        length = len(columnTitle)
+        total = 0
+        
+        def charConvert(charecter):
+            return ord(charecter) - 64
+
+        for e in range(length):
+            print(26 ** (length - 1 - e))
+            total += (26 ** (length - 1 - e)) * (charConvert(columnTitle[e]))
+        
+        return total
