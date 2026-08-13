@@ -15,5 +15,5 @@ class Solution(object):
         for e in range(length):
             print(26 ** (length - 1 - e))
             total += (26 ** (length - 1 - e)) * (charConvert(columnTitle[e]))
-        
+         
         return total

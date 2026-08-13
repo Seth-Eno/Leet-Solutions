@@ -11,7 +11,7 @@ Return the maximum number of water bottles you can drink.
  
 
 Example 1:
-
+ 
 
 Input: numBottles = 13, numExchange = 6
 Output: 15
