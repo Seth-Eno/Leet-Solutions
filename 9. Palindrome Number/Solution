@@ -1,0 +1,30 @@
+import math
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        strX = str(x)
+        tempX = []
+        revX = []
+
+        if abs(x) < 10 and x < 0:
+            return False
+
+        for char in strX:
+            tempX.append(char)
+        
+        if x < 0:
+            tempX.pop()
+        
+        storeX = []
+        storeX += tempX
+
+        while len(tempX) > 0:
+            revX.append(tempX.pop())
+        
+        if storeX == revX:
+            return True
+
+        return False

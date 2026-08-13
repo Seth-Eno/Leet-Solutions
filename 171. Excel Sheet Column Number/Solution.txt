@@ -7,7 +7,8 @@ class Solution(object):
         
         length = len(columnTitle)
         total = 0
-        
+
+        # re-index letter values from ascii 
         def charConvert(charecter):
             return ord(charecter) - 64
 
